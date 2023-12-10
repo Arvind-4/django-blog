@@ -1,6 +1,57 @@
-# Blog-Using-Django
-A simple Blog Using Django Framework
 
-to install django run command in powershell / terminal
+# Blog
 
-pip install django
+## 📦 Tech Stack:
+
+- [Django](https://www.djangoproject.com/)  - Django makes it easier to build better web apps more quickly and with less code.
+- [Bootstrap](https://getbootstrap.com/)  - Build fast, responsive sites with Bootstrap.
+- [Vercel](https://vercel.com/)  - Vercel's Front end Cloud provides the developer experience and infrastructure to build, scale, and secure a faster, more personalised Web.
+
+## Demo:
+
+<a href="https://awesomeqrcode.vercel.app/">
+<img src=".github/static/homepage.png" alt="Home Page"/>
+</a>
+
+
+
+## Getting Started: 
+
+- Clone repository 
+
+```bash
+mkdir ~/Dev/blog -p
+cd ~/Dev/blog
+git clone https://github.com/Arvind-4/django-blog.git .
+```  
+
+- Install Dependencies:
+
+```bash
+cd ~/Dev/blog
+python3.8 -m pip install virtualenv
+python3.8 -m virtualenv . 
+source bin/activate
+pip install -r requirements.txt
+```
+
+- Create  `.env`  file:
+Add Your Credentials  `.env`  from  `sample.env`:
+
+```bash
+DJANGO_SECRET_KEY=
+DJANGO_DEBUG=
+```
+Get your Secret key from:
+```python
+python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
+```
+
+- Run Server:
+
+```bash
+cd ~/Dev/blog
+python manage.py runserver
+```
+
+Open [localhost:8000](http://localhost:8000) in your favourite browser :)
