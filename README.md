@@ -9,7 +9,7 @@
 
 ## Demo:
 
-<a href="https://awesomeqrcode.vercel.app/">
+<a href="https://blogwithdjango.vercel.app">
 <img src=".github/static/homepage.png" alt="Home Page"/>
 </a>
 
